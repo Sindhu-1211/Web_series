@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Series</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>WebSeries</title>
   </head>
   <body>
     <div class="cont">
@@ -14,16 +14,16 @@
         <form class="container">
           <label for="title"><strong>Title:</strong></label
           ><br />
-          <input type="text" /><br /><br />
+          <input type="text" id="title" /><br /><br />
           <label for="director"><strong>Directors:</strong></label
           ><br />
-          <input type="text" /><br /><br />
+          <input type="text" id="director" /><br /><br />
           <label for="stars"><strong>Stars:</strong></label
           ><br />
-          <input type="text" /><br /><br />
+          <input type="text" id="stars" /><br /><br />
           <label for="streaming"><strong>Streaming on:</strong></label
           ><br />
-          <select>
+          <select id="streaming">
             <option style="text-align: center">--- Select ---</option>
             <option value="netflix">Netflix</option>
             <option value="hotstar">Hotstar</option>
@@ -32,24 +32,12 @@
           </select>
           <br /><br />
           <div class="button">
-            <button type="button"><strong>Add</strong></button>
+            <input type="submit" value="Add" class="btn" />
           </div>
         </form>
-        <div class="cards">
-          <div class="flex1">
-            <div class="card1"></div>
-            <div class="card2"></div>
-          </div>
-          <div class="flex2">
-            <div class="card3"></div>
-            <div class="card4"></div>
-          </div>
-          <div class="flex3">
-            <div class="card5"></div>
-            <div class="card6"></div>
-          </div>
-        </div>
+        <div class="collection"></div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
