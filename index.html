@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>WebSeries</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: #fafafa;
+      }
+    </style>
   </head>
   <body>
-    <div class="cont">
-      <h1>Web Series</h1>
-      <div class="flex">
-        <form class="container">
-          <label for="title"><strong>Title:</strong></label
-          ><br />
-          <input type="text" id="title" /><br /><br />
-          <label for="director"><strong>Directors:</strong></label
-          ><br />
-          <input type="text" id="director" /><br /><br />
-          <label for="stars"><strong>Stars:</strong></label
-          ><br />
-          <input type="text" id="stars" /><br /><br />
-          <label for="streaming"><strong>Streaming on:</strong></label
-          ><br />
-          <select id="streaming">
-            <option style="text-align: center">--- Select ---</option>
-            <option value="netflix">Netflix</option>
-            <option value="hotstar">Hotstar</option>
-            <option value="prime">Prime</option>
-            <option value="youtube">YouTube</option>
-          </select>
-          <br /><br />
-          <div class="button">
-            <input type="submit" value="Add" class="btn" />
-          </div>
-        </form>
-        <div class="collection"></div>
-      </div>
-    </div>
-    <script src="app.js"></script>
+    <div id="demo"></div>
+
+    <script type="module" src="../src/MyDispacther.js"></script>
+    <script type="module" src="../src/web-series-card.js"></script>
+    <script type="module" src="../src/web-series-form.js"></script>
+    <script type="module" src="../src/WebSeries.js"></script>
+
+    <web-series>
+      <web-series-card></web-series-card>
+      <web-series-form></web-series-form>
+    </web-series>
   </body>
 </html>
